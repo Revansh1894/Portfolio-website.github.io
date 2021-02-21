@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+    background-image: url('stage-podium-illuminated-scene-spotlight-with-blue-lighting_7233-2886.jpg');
+	background-repeat:no-repeat;
+    background-position:center;
+	}
+	
+	.responsive {
+  		width: 100%;
+		max-width: 500px; 
+		height: 300px;
+				}
+</style>
+</head>
+<body>
+	<script>
+		var i = 0; 
+		var images = []; 
+		var time = 1300; 
+			images[0] = "slide-0.jpg";
+			images[1] = "streaming-music.jpg";
+			images[2] = "football.jpg"
+			images[3] = "chess.jpg";
+			images[4] ="skills.png";
+			images[5] = "time management.jpg";
+			images[6] = "web-development-programming-resized.jpg";
+			images[7] = "soft skils.jpg";
+ 		 function changeImg(){
+		document.slide.src = images[i];
+		if(i < images.length - 1){ 
+	 	i++;
+		} else {
+		i = 0;
+		}
+		setTimeout("changeImg()", time);
+		}
+		window.onload=changeImg;
+	</script>
+	<h1 align="center"><font color="white" size="25" style="background-color: black">ABOUT ME </font></h1><br><br><br><br>
+	<p align="center"><img name="slide" width="900" height="500" class="responsive" style="vertical-align: center"></p>
+</body>
+</html>
