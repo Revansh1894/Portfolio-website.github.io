@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap" rel="stylesheet">
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: 'Titillium Web', sans-serif;
+			height: 100vh
+			align-items: center;
+			background-image: url('wood-grain-wallpaper-3.jpg');
+			 background-size: cover;
+		}
+		.heading h1{
+			position: absolute;
+			top:100%;
+			text-align: center;
+		}
+		.heading p{
+			font-size: 1.6em;
+			line-height: 0;
+			color: #fff
+		}
+		.heading h2{
+			font-size: 3.5em;
+			line-height: 0;
+			color: #fff;
+		}
+
+		.timer{
+			margin: 285px 90px; 
+			width: 120px;
+			background:rgba(0,0,5,1);
+			text-align: center ;border-radius: 0px;
+			box-shadow: 15px 10px 20px #0060;
+			cursor: pointer;
+                  
+		}
+		.timer p{
+			color: #fff;
+			font-size: 45px;
+			margin: 25px 8px;
+		}
+		.timer h6{
+			margin: 0;
+			padding: 10px;
+			font-size:1em;
+			background: #040;
+			color: #fff;
+			text-transform: uppercase;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			box-shadow: 45px -0px 40px #000;
+		}
+		.abc{
+           display: flex;
+		}
+
+	</style>
+</head>
+<body >
+	<table align="center"  style="border-color: white; background-color: black; width: 80%; padding: 15px">
+		<tr align="center">
+			<th>
+<font size="30"style="color: white">COUNTDOWN TIMER</font>
+            </th>
+            </tr>
+        </table>
+        <div class="abc">
+<div class="timer">
+	<p id="day"></p>
+	<h6>days</h6>
+</div>
+<div class="timer">
+	<p id="hour"></p>
+	<h6>hours</h6>
+</div>
+<div class="timer">
+	<p id="minute"></p>
+	<h6>minutes</h6>
+</div>
+<div class="timer">
+	<p id="second"></p>
+	<h6>seconds</h6>
+</div>
+</div>
+<script>
+	
+
+var countDownDate = new Date("Feb 28, 2021 00:00:00").getTime();
+
+
+var x = setInterval(function() {
+
+
+  var now = new Date().getTime();
+    
+
+  var distance = countDownDate - now;  
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+
+ document.getElementById("day").innerHTML=days;
+  document.getElementById("hour").innerHTML=hours;
+  document.getElementById("minute").innerHTML=minutes;
+  document.getElementById("second").innerHTML=seconds;
+})
+</script>
+
+</body>
+</html>
