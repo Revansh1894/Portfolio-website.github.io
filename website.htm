@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.header {
+  padding: 8px;
+  text-align: center;
+  background: #028282;
+  color: white;
+}
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+.col-25{
+   -ms-flex: 25%;
+  flex: 25%;
+}
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+.col-100{
+   -ms-flex: 100%;
+  flex: 100%;
+
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #EDF7F7;
+  padding: 20px;
+  color: #373939;
+}
+
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg1 {
+  background-color: #EDF7F7;
+  width: 50%;
+  padding: 0px;
+}
+.fakeimg2{
+   background-color: #EDF7F7;
+  width: 80%;
+  padding: 1px;
+}
+.fakeimg {
+  background-color: #FFFFFF;
+  width: 100%;
+  padding: 0px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: left;
+  background: #242525;
+  color: white;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #242525;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 36px;
+  text-decoration: none;
+  font-size: 17px;
+          }
+
+.topnav a.hover {
+  background-color: #ddd;
+  color: blue;
+}
+
+.topnav a.active {
+  background-color: #E2E7E7;
+  color: black;
+}
+.topnav .icon {
+  display: none;
+}
+
+  @media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><b>REVANSH PHIRANI</b></h1>
+  <p><i>Student at IIT Kharagpur</i></p>
+</div>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active"><i class="fa fa-home" aria-hidden="true"></i>  Home</a>
+  <a href="edu.htm"><i class="fa fa-book" aria-hidden="true"></i>  Educational details</a>
+  <a href="achievements.htm"><i class="fa fa-empire" aria-hidden="true"></i>  Achievements</a>
+  <a href="aboutme.htm"><i class="fa fa-user-circle" aria-hidden="true"></i>  About Me</a>
+  <a href="form1.htm"><i class="fa fa-address-card" aria-hidden="true"></i>  Know More</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2 align="center">ABOUT ME</h2>
+    <h5 align="center"> My photo:</h5>
+   <p align="center"> <img src="images\REVANSH.jpg " width="180" height="200" border="2"  align="center"></p>
+    <p>I am Revansh Phirani.I am from Faridabad Haryana .I was born on 16 November 2001 .From my childhood I was enthusiastic child and had deep interest in learning new things.</p>
+    <h3 align="center">SOME DETAILS</h3>
+    <p align="center">These are futher details</p>
+    <pre style="font-size: 17px; text-align: center;">
+       Name - Revansh Phirani
+  DOB  - 16-11-2001
+Work - Student
+ City - Faridabad
+    </pre><br>
+  </div>
+  <div class="main">
+    <h2>MY SKILLS</h2>
+    <h5>I am a first year undergraduate at IIT kgp and my skills include:</h5>
+
+    <p align="center"><img src="time management.jpg" width="300" height="200" align="center" ></p>
+    <p align="stack">Good time management allows you to accomplish more in a shorter period of time, which leads to more free time, which lets you take advantage of learning opportunities, lowers your stress, and helps you focus, which leads to more career success. Each benefit of time management improves another aspect of your life</p>
+      <p align="center"><img src="web-development-programming-resized.jpg" width="300" height="200" align="center"></p><p align="stack">As a web developer, you must know all about search engine optimization. This is because website traffic is becoming more and more important to companies. ... Because more and more companies are looking to have good SEO, it's an important skill to have as a web developer</p>
+      <p align="center"><img src="soft skils.jpg" width="300" height="200" ></p><p align="stack">Soft skills are attributes that enable me to engage in meaningful interactions with others.</p>
+
+    <p>Soft skills are the interpersonal attributes you need to succeed in the workplace. They are how you work with and relate to others—in other words, people skills.</p>
+
+  </div>
+</div>
+
+<div class="footer">
+  <center><h2>Contact Me</h2>
+  <pre>
+<a href="https://www.facebook.com/revansh.phirani" style="color: white"><i class="fa fa-facebook-official" aria-hidden="true"> Facebook</i> </a>
+
+<a href="https://www.linkedin.com/in/revansh-phirani-25b74a1b8" style="color: white"><i class="fa fa-linkedin-square" aria-hidden="true"> Linkedin</i></a>
+
+<i class="fa fa-phone" aria-hidden="true"></i> 98XYZ...
+  </pre>
+  </center>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
