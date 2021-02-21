@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Calibri;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+input[type=text], select {
+  
+  padding: 15px 25px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 1px;
+  ;
+}
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+.col-25{
+   -ms-flex: 25%;
+  flex: 25%;
+}
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+.col-100{
+   -ms-flex: 100%;
+  flex: 100%;
+
+}
+.col-25,
+.col-50,
+.col-75,
+.col-100 {
+  padding: 0 10px;
+}
+
+.container {
+  background-color: #F2F1ED ;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 1px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+        }
+.button1 {background-color: #4CAF50; }
+.button1:hover {
+  background-color: #0D3D09;
+  color: white; }
+.button2 {background-color: blue;} 
+.button2:hover {
+  background-color: #008CBA;
+  color: white;}
+
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+</style>
+</head>
+<body>
+
+<p  align="center" style="background-color: #3C160E"><font style="color: white " size="25"><b>Registration Form<br></b></font></p>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>All fields are mandatory</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text"  name="firstname" placeholder="Your Name">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text"  name="email" placeholder="Your Email">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text"  name="address" placeholder="Your Address">
+            <label for="city"><i class="fa fa-industry" aria-hidden="true"></i> City</label>
+            <input type="text" name="city" placeholder="Your City">
+
+            <div class="row">
+              <div class="col-25">
+                <label for="state"><i class="fa fa-university" aria-hidden="true"></i>  State</label>
+                <select id="state" name="state" required="">
+      <option value="" disabled selected>States</option>
+      <option value="andra pradesh">Andra Pradesh</option>
+      <option value="bihar">Bihar</option>
+      <option value="delhi">Delhi</option>
+      <option value="haryana">Haryana</option>
+      <option value="rajasthan">Rajasthan</option>
+      <option value="west bengal">West Bengal</option>
+    </select>
+              </div>
+             
+              <div class="col-50">
+                <label for="country"><i class="fa fa-map-marker" aria-hidden="true"></i>  country</label>
+                 <select id="state" name="state" required="">
+      <option value="" disabled selected>Country</option>
+      <option value="andra pradesh">Australia</option>
+      <option value="bihar">Canada</option>
+      <option value="delhi">England</option>
+      <option value="haryana">India</option>
+      <option value="rajasthan">Sri Lanka</option>
+      <option value="west bengal">USA</option>
+    </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50"><br>
+            <label for="date of birth" style="padding: 0.2px"><h3> Date of Birth</h3></label>
+            <div class="row" >
+              <div class="col-25">
+                <select id="state" name="state" required="">
+                    <option value="" disabled selected>Date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+               </select> 
+                                          
+             </div>
+             <div class="col-25">  
+                   
+                 <select id="state" name="state" required="">
+                    <option value="" disabled selected>Month</option>
+                    <option value="andra pradesh">January</option>
+                    <option value="bihar">February</option>
+                    <option value="delhi">March</option>
+                    <option value="haryana">April</option>
+                    <option value="rajasthan">May</option>
+                    <option value="west bengal">June</option>
+                    <option value="west bengal">July</option>
+                    <option value="west bengal">August</option>
+                    <option value="west bengal">September</option>
+                    <option value="west bengal">October</option>
+                    <option value="west bengal">November</option>
+                    <option value="west bengal">December</option>
+               </select>        
+             
+               </div>
+               <div class="col-50">
+                <select id="state" name="state" required="">
+                    <option value="" disabled selected>Year</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                    <option value="2012">2012</option>
+                    <option value="2013">2013</option>
+                    <option value="2014">2014</option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+               </select> 
+               </div>
+             </div>
+             <br>
+           <div class="row">
+             <label for="phone number"><i class="fa fa-phone" aria-hidden="true"></i>  Phone Number</label>
+             <input type="text"  name="phone number" placeholder="Your Phone Number">
+           </div>
+               
+                
+                <p align="left">Please select your gender:</p>
+                <div class="row" >
+                  <input type="radio"  name="gender" value="male" >
+                  <label for="male">Male </label>
+                
+                  <input type="radio"  name="gender" value="female">
+                  <label for="female">Female  </label>
+                  <input type="radio"  name="gender" value="other">
+                  <label for="other">Other  </label>
+                <br><br><br><br><br><br>
+
+              </div>
+               <table width="80%" align="center">
+          <tr>
+          <th>
+            <button class="button button1">REGISTER</button>
+          </th>
+          <th>
+            <button class="button button2"><i class="fa fa-download" aria-hidden="true"></i>  DOWNLOAD</button>
+          </th>
+        </tr>
+      </table>
+      </form>
+    </div>
+  </div>
+ 
+ 
+</div>
+
+</body>
+</html>
