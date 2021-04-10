@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    * {
+  box-sizing: border-box;
+      }
+ .row {  
+             display: -ms-flexbox; 
+             display: flex;
+             -ms-flex-wrap: wrap; 
+             flex-wrap: wrap;
+             padding-left: 20px;
+             }
+         .col-25{
+                -ms-flex: 25%;
+                 flex: 25%;
+		        }
+ .overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 25%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+ }
+
+
+.col-2:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+img{
+    height: auto;
+     width: 100%;
+      max-width: 300px;
+     margin: auto;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+    </head>
+    <body>
+    <h1 style="text-align: center; color: blue;">IMAGE GALLERY</h1>
+        <div class="row">
+            
+            <div class="col-25">
+            <img src="2.jpg" onclick="myFunction(this)"  style="height: auto; width: 100%; max-width: 300px; margin: auto;">
+            <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>
+            </div>
+            
+            
+            <div class="col-25">
+                <img src="slide-0.jpg" onclick="myFunction(this)" style="height: auto; width: 100%; max-width: 300px; margin: auto;">
+                <div class="overlay">
+                    <div class="text">Hello World</div>
+                  </div>    
+            </div>
+                <div class="col-25">
+                    <img src="2.jpg" onclick="myFunction(this)"  style="height: auto; width: 100%; max-width: 300px; margin: auto;">
+                    <div class="overlay">
+                        <div class="text">Hello World</div>
+                      </div>    
+                </div>
+                    <div class="col-25">
+                        <img src="chess.jpg" onclick="myFunction(this)"  style="height: auto; width: 100%; max-width: 300px; margin: auto;">
+                     <div class="overlay">
+                <div class="text">Hello World</div>
+              </div>    
+                    </div>
+        </div>
+        <br>
+        <div class="container">
+          
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <img id="expandedImg" style="width:100%; border: black; border-width: 3px; margin-left: auto;margin-right: auto; display: block; max-width: 800px;"  >
+            <div id="imgtext"></div>
+          </div>
+          
+          <script>
+          function myFunction(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            var imgText = document.getElementById("imgtext");
+            expandImg.src = imgs.src;
+          
+            expandImg.parentElement.style.display = "block";
+          }
+          </script>
+          
+    </body>
+</html>
